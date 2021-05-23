@@ -87,7 +87,7 @@
         }
         #main{
             margin: 0px 109px 0px 107px;
-            height: 2000px;
+            height: 2400px;
             position: relative;
             top: 35px;
         }
@@ -126,6 +126,43 @@
             font-size: 14px;
             color: #808080;
         }
+        #mainb-content{
+            width: 80%;
+            height: 400px;
+        }
+        #content-1{
+            float: left;
+            width: 27%;
+        }
+        #date{
+            font-size: 15px;
+            position: relative;
+            top: -3.5px;
+            color: #808080;
+            margin-left: 4px;
+            padding-right: 12px;
+            border-right: 1px solid #BB1919;
+        }
+        #technology{
+            color: #BB1919;
+            font-size: 16px;
+            position: relative;
+            left: 5px;
+            top: -5px;
+        }
+        #mainb-image{
+            float: left;
+            width: 45%;
+        }
+        #video-heading{
+            font-size: 18px;
+            width: 194px;
+            height: 70px;
+            font-weight: 800;
+        }
+        #video-heading span{
+            border-bottom: 1px solid brown;
+        }
         #video-name-sidebar{
             font-size: 12px;
             position: relative;
@@ -153,7 +190,21 @@
             padding: 10px;
             height: 120px;
         }
+        #title{
+            margin: 4px auto 0px auto;
+            position: relative;
+            left: 1500px;
+            color: red;
+        }
+        #title-content{
+            font-size: 20px;
+        }
+        #title-content a{
+            color: blue;
+        }
     </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
 </head>
 <body>
     <div id="banner">
@@ -187,10 +238,25 @@
         <a href="#">World News Tv</a>
         <a href="#">In Pictures</a>
     </div>
+    <div id="title">
+        <span id="title-content"><strong>This is a demo website.</strong></span>
+    </div>
     <div id="main">
         <div id="maintitle">
             <h3>Entertainment</h3> 
         </div>
+        <div id="mainb-content">
+            <h1>Asda bug exposed payment details</h1>
+            <div id="content-1">
+                <p style="width: 68%; color: #5a5a5a;">Security vulnerabilities that put customers at risk have affected Asda's website for a couple of years, a security expert has revealed</p>
+                <p><img src="clock.png" width="19px"><span id="date">22 May 2021</span><span id="Technology">Technology</span></p><hr style="width: 60px; position:; position: relative; left: -107px; height: 0.2px; background-color: #BB1919;">
+                <span><p>Surveillance firm hit in hack attack</p><p>eBay flaw has existed for months</p></span>
+            </div>
+            <div id="mainb-image">
+                <img src="asda.png" width="100%"> 
+            </div>
+        </div>
+        <div id="video-heading"><span>Popular Youtube Videos</span></div>
         <div id="mainb">
             <div id="section-1">
             <div id="video-part1" class="paddingright common-main">    
@@ -290,5 +356,12 @@
         </div>
         <hr style="margin-bottom: 0px;">
         <div id="downbar"><span style="float: right;">@bbcofficial</span></div>
+        <script type="text/javascript">
+            $("#title").animate({left:"0px"},13000, function(){
+                $(this).html(" ")
+            })
+        
+            
+        </script>
 </body>
 </html>
